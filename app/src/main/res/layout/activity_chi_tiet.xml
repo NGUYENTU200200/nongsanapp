@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChiTietActivity">
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    app:title="Chi tiết sản phẩm"
+    android:background="@color/teal_200"
+    android:id="@+id/toolbar"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+<FrameLayout
+    android:layout_width="60sp"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_gravity="right"
+    android:layout_marginRight="5sp"
+    android:id="@+id/frame_chiTiet"
+    >
+    <com.nex3z.notificationbadge.NotificationBadge
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_gravity="top|right"
+        android:id="@+id/menu_sl"
+        ></com.nex3z.notificationbadge.NotificationBadge>
+    <ImageView
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="10sp"
+        android:src="@drawable/cart"
+        ></ImageView>
+</FrameLayout>
+</androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginTop="5dp"
+        >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:id="@+id/imgchitiet"
+            ></ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_tensp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên sản phẩm"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:id="@+id/tv_giasp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"></TextView>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:background="@drawable/spinner"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                
+                ></Spinner>
+            <Button
+                android:id="@+id/bt_add_gioHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add to cart"
+                android:textColor="@color/red"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="15dp"></Button>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/layout_1"
+        android:orientation="vertical"
+app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả chi tiết sản phẩm"
+            android:layout_marginLeft="10dp"
+            android:textSize="18dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"></TextView>
+        
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_mieutaChitiet"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                ></TextView>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+
+- Vid 36 liên quan đến đăng nhập và đăng xuất nên chưa làm ( Cần làm sau )
+- Cần xem lại và làm lại phần resetpass
+
+- Xử lí Api và Retrofit chưa làm gì cả, code xong hết giao diện các thứ quay lại code phần đó sau ( Vô cùng quan trọng )
+- Chưa config SplashActivity, cần quay lại check sau
+
+
+******* Học về RxAndroid ( 1 ví dụ khác của Retrofit, sử dụng để xử lí Api và Thread ) ********
+***** Tìm hiểu về EventBus để xử lí các sự kiện
+
+*** Đối với những dữ liệu sử dụng nhiều trong các Activity, sử dụng 1 lớp riêng để lưu trữ
+*** Build 1 Interface để lưu trữ giá trị dùng trong nhiều Activity
+** Đối với các sự kiện dùng nhiều lần , sử dụng Interface để lưu trữ
+** Khi sử lí dữ liệu từ database thì phải từ dữ liệu để suy ra các lớp
+
+- Phần thêm sản phẩm vào giỏ hàng chưa ổn , thêm vào bị sai, cần xử lí thuật toán ( Vid từ 18 -> 20 )
+
+==== chỉnh lại recycleViewMain ===
+
+=== bỏ phần mô tả ====
+
+==== thêm dữ liệu ===

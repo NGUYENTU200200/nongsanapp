@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:elevation="8sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:id="@+id/gioHang_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cart"
+            ></ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gioHang_tensp"
+                android:text="Name"
+                android:layout_marginLeft="10sp"
+                android:textSize="18sp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gioHang_gia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100sp"
+                    android:text="20000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10sp"></TextView>
+
+                <ImageView
+                    android:id="@+id/gioHang_tru"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/baseline_remove_24"></ImageView>
+
+                <TextView
+                    android:id="@+id/gioHang_soluong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:text="20"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <ImageView
+                    android:id="@+id/gioHang_cong"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/baseline_add_24"></ImageView>
+
+                <CheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="48sp"
+                    android:id="@+id/cb_gioHang"
+                    ></CheckBox>
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:id="@+id/gioHang_tongGia"
+                android:textSize="22sp"
+                android:text="40000"
+                android:textStyle="bold"
+                android:layout_marginLeft="10sp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
